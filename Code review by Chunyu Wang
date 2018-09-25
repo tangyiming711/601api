@@ -1,0 +1,8 @@
+The coder successfully understand how to use the twitter api, ffmpeg, and Google api.
+The code runs successfully and does a great job meeting the goals of the miniproject.
+The code contains a module of error checking which I think is a flashing point of the project.
+However, the process for the code review is not so friendly. For each reviewer, the local path should be typed in manually by hands. 
+And the Google api credentials json file should be runned before the code, which I think is a waste of users' time. The credential module 
+should be integrated in the code.
+And the interface of the code running is not quite clear. The user may not understand what the computer is doing when the code runs.
+There should be a feedback output to the screen to explain what the function is doing at the same time, in order to meet the needs of users. 
