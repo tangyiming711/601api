@@ -15,6 +15,7 @@ data = cursor.fetchone()
 
 print ("Database version : %s " % data)
 
+#the whole results of the table
 sql="select * from first"
 try:
 	cursor.execute(sql) 	#run sql sentence
@@ -25,7 +26,7 @@ try:
 except:
    print ("Error: unable to fecth data")
 
-
+#search for keyword
 sql = "select * from first where keyword='singer,celebrity'" 
 try:
    # execute sql
@@ -50,7 +51,7 @@ except:
    print ("Error: unable to fecth data")
 
 
-
+#number of picture
 sql="select * from first"
 
 try:
@@ -71,7 +72,7 @@ try:
 except:
    print ("Error: unable to fecth data")
 
-#see most popular descriptors
+# most popular descriptors
 sql="select keyword,count(*) as count from first group by keyword order by count desc"
 try:
 	cursor.execute(sql) 	
