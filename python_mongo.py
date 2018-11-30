@@ -3,7 +3,7 @@
  
 import pymongo
 
-#mongodb account, database, table
+#mongodb account, database, collection
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["mlp"]
 mycol = mydb["first"]
@@ -14,6 +14,7 @@ for x in mycol.find():
 print("\n")
 
 #show the information about account_id and picture number
+#use find() to search certian word,Set the value of the field to be returned to 1
 print("the account id and picture number:")
 for x in mycol.find({},{ "_id": 0, "account_id": 1, "picture": 1 }):
   print(x)
