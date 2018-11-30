@@ -92,8 +92,5 @@ except:
 
 
 
-
-
-
 # close database
 db.close()
